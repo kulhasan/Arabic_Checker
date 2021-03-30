@@ -21,6 +21,7 @@ for Fiil in asil_salim_fiil_havuzu_harekesiz:
     # print(asil_salim_fiil_havuzu_harekesiz)
 
 
+
 working_asil_salim_fiil_havuzu_harekesiz = asil_salim_fiil_havuzu_harekesiz.copy()
 
 zamir_havuzu = {
