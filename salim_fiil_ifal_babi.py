@@ -3,8 +3,6 @@
 
 
 import tanimlar as ta
-import fiil_deposu_1 as fd1
-import Bablarina_Gore_Fiiller as bgf
 import Aksam_i_Seba as aseba
 
 class salim_fiil_ifal_babi:

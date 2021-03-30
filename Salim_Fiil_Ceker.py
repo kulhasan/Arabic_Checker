@@ -1,15 +1,8 @@
 # Salim mazi malum fiillerin 6 babinin kiplere gore cekimini yapan program
 
-# todo formuller fiildeposu1'deki tanimlara gore yeniden yazilabilir ancak
-# todo sanki yazilmasa daha iyi olur gibi.
-# todo cunku harekeli fiillerin cekimi icin hazirlanan asagidaki formuller daha az kompleks gibi.
-# todo dusunup olgunlastiralim
 
-import tanimlar as ta
-import fiil_deposu_2 as fd2
 import fiil_deposu_1 as fd1
 import Aksam_i_Seba as aseba
-import Bablarina_Gore_Fiiller as bgf
 from salim_fiil_ifal_babi import salim_fiil_ifal_babi as sfifalb
 from Salim_Fiil_Bab_1_Mazi_Malum_Fiil_Ceker import Fiiller as sfb1mmfc
 
@@ -44,7 +37,7 @@ class Fiiller:
 
     def sulasi_bab_bul(self, fiil):
         print("Bab kontrol", fiil)
-        bab = fd2.salim_fiil_bab_havuzu_dict.get(fiil)
+        bab = fd1.sulasi_fiil_bab_havuzu_dict.get(fiil)
         if not bab:
             command = input("Bu fiilin babi bab havuzumuzda gozukmuyor. Eklemek icin ekle yaziniz.")
             if command == 'ekle':
@@ -69,7 +62,7 @@ if __name__ == '__main__':
     # todo for fiil in fd1.salim_fiil_bab_111111111????????/
     # todo sadece bab 1 den degil bab ikiden de nasil cagiracagiz ayni anda
     # todo or yazinca bab 1 den cagiriyor and yazinca bab 2 den cagiriyor
-    for fiil in fd1.fiil_havuzu:
+    for fiil in fd1.sulasi_fiil_havuzu_list:
         fiil_bir = Fiiller(fiil)
         fiil_bir.yazdir()
 

@@ -4,20 +4,27 @@
 
 import tanimlar as ta
 import fiil_deposu_1 as fd1
-import fiil_deposu_2 as fd2
 
 
 salim_fiil_havuzu = []
 sahih_mehmuz_fiil_havuzu = []
+# sahih_mehmuz_ul_fa_fiil_havuzu = []
+# sahih_mehmuz_ul_ayn_fiil_havuzu = []
+# sahih_mehmuz_ul_lam_fiil_havuzu = []
 sahih_muzaaf_fiil_havuzu = []
 misal_fiil_havuzu = []
+# sahih_misal_vavi_fiil_havuzu = []
+# sahih_misal_yai_fiil_havuzu = []
 ecvef_fiil_havuzu = []
+#ecvef_vavi_fiil_havuzu = []
+#ecvef_vavi_fiil_havuzu = []
 nakis_fiil_havuzu = []
 lefif_i_makrun_fiil_havuzu = []
 lefif_i_mefruk_fiil_havuzu = []
 
+# Aksam-ı Seb'a'ya göre listelemek için aşağıdaki formüller hazırlanmıştır.
 
-for fiil in fd1.fiil_havuzu:
+for fiil in fd1.sulasi_fiil_havuzu_list:
     if (fiil[0] not in ta.GAYR_SALIM) and \
             (fiil[1] not in ta.GAYR_SALIM) and \
             (fiil[2] not in ta.GAYR_SALIM):
@@ -31,7 +38,9 @@ for fiil in fd1.fiil_havuzu:
     elif fiil[0] not in ta.ILLET_HARFI and \
             fiil[1] not in ta.ILLET_HARFI and \
             fiil[2] not in ta.ILLET_HARFI and \
-            (fiil[0] in ta.HEMZE or fiil[1] in ta.HEMZE or fiil[2] in ta.HEMZE):
+            (fiil[1] not in ta.HEMZE or
+             fiil[2] not in ta.HEMZE or
+             fiil[0] in ta.HEMZE):
         sahih_mehmuz_fiil_havuzu.append(fiil)
 
     elif fiil[0] in ta.ILLET_HARFI and \
@@ -112,20 +121,11 @@ for fiil in girdi:
 '''
 
 if __name__ == '__main__':
-    print('Salim Fiiller: ',
-          #todo satir atlatmamiz gerekiyor.
-          salim_fiil_havuzu)
-    print('Sahih Mehmuz Fiiller',
-          sahih_mehmuz_fiil_havuzu)
-    print('Sahih Muzaaf Fiiller: ',
-          sahih_muzaaf_fiil_havuzu)
-    print('Misal Fiiller: ',
-          misal_fiil_havuzu)
-    print('Ecvef Fiiller: ',
-          ecvef_fiil_havuzu)
-    print('Nakıs Fiiller: ',
-          nakis_fiil_havuzu)
-    print('Lefif-i Makrun Fiiller: ',
-          lefif_i_makrun_fiil_havuzu)
-    print('Lefif-i Mefruk Fiiller: ',
-          lefif_i_mefruk_fiil_havuzu)
+    print('Salim Fiiller:\n ', salim_fiil_havuzu)
+    print('Sahih Mehmuz Fiiller:\n', sahih_mehmuz_fiil_havuzu)
+    print('Sahih Muzaaf Fiiller:\n ', sahih_muzaaf_fiil_havuzu)
+    print('Misal Fiiller:\n ', misal_fiil_havuzu)
+    print('Ecvef Fiiller:\n ', ecvef_fiil_havuzu)
+    print('Nakıs Fiiller:\n ', nakis_fiil_havuzu)
+    print('Lefif-i Makrun Fiiller:\n ', lefif_i_makrun_fiil_havuzu)
+    print('Lefif-i Mefruk Fiiller:\n ', lefif_i_mefruk_fiil_havuzu)

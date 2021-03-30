@@ -1,14 +1,9 @@
+
+
 # Salim mazi malum fiillerin 1. babinin kiplere gore cekimini yapan program
 
-# todo formuller fiildeposu1'deki tanimlara gore yeniden yazilabilir ancak
-# todo sanki yazilmasa daha iyi olur gibi.
-# todo cunku harekeli fiillerin cekimi icin hazirlanan asagidaki formuller daha az kompleks gibi.
-# todo dusunup olgunlastiralim
-
 import tanimlar as ta
-import fiil_deposu_1 as fd1
-import fiil_deposu_2 as fd1
-import Bablarina_Gore_Fiiller as bgf
+import Bablarina_ve_Aksam_i_seba_ya_gore_fiiller as b6a7
 
 
 #todo Fiiller class inin ismi degismeli mi ornek: Salim fiiller ya da salim fiil birinc bab fiilleri gibi
@@ -162,7 +157,7 @@ class Fiiller:
 
 if __name__ == '__main__':
     fiiller_havuzu = list()
-    for fiil in bgf.salim_fiil_bab_1_havuzu:
+    for fiil in b6a7.salim_fiil_bab_1_fiil_havuzu:
         fiil_bir = Fiiller(fiil)
         fiil_bir.yazdir()
         fiiller_havuzu.append(fiil_bir)

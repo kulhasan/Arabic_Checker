@@ -7,10 +7,9 @@
 from random import randint
 from Salim_Fiil_Ceker import Fiiller
 import fiil_deposu_1 as fd1
-import tanimlar as ta
 
 asil_salim_fiil_havuzu_harekesiz = list()
-for kok_fiil in fd1.fiil_havuzu:
+for kok_fiil in fd1.sulasi_fiil_havuzu_list:
     cekimli_fiil = Fiiller(kok_fiil)
     asil_salim_fiil_havuzu_harekesiz.append(cekimli_fiil)
 
@@ -72,7 +71,7 @@ while True:
     command = input("Girdiniz ne olacak? (kapatmak icin 'cikartik' yazin)\nCevap: ")
     # TODO Ogrencilere coktan secmeli 4 sik sunma - dogru secerlerse dogru deme
     tur += 1
-    if tur == len(fd1.fiil_havuzu) * fiil_soru_sayisi:
+    if tur == len(fd1.sulasi_fiil_havuzu_list) * fiil_soru_sayisi:
         print(f"Şimdiye kadar {tur} tane soru cevapladiniz. Aferin... ")
         print('Yeter gaari.')
         break
