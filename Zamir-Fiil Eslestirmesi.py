@@ -15,12 +15,11 @@ for kok_fiil in fd1.fiil_havuzu:
     asil_salim_fiil_havuzu_harekesiz.append(cekimli_fiil)
 
 
-# print(fd.salim_fiil_havuzu_harekesiz)
-
 for Fiil in asil_salim_fiil_havuzu_harekesiz:
     print(Fiil.yazdir())
     # print(Fiil.salim_mazi_malum_muhatab)
     # print(asil_salim_fiil_havuzu_harekesiz)
+
 
 working_asil_salim_fiil_havuzu_harekesiz = asil_salim_fiil_havuzu_harekesiz.copy()
 
