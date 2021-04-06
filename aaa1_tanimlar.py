@@ -174,6 +174,13 @@ HEMZE = HEMZE_YALNIZ + HEMZE_ELIF_USTUNDE + HEMZE_ELIF_ALTINDA + HEMZE_VAV_USTUN
 
 GAYR_SALIM = ILLET_HARFI + HEMZE + SEDDE
 
+HARF = ELIF + ELIF_MEDLI + BE + TE + TE_KAPALI + \
+       SE + CIM + HA + HI + DAL + ZEL + RA + ZE + \
+       SIN + SHIN + SAD + DAT + TI + ZI + AYIN + \
+       GAYIN + FE + QAF + KEF + LAM + MIM + NUN + \
+       VAV + HE + YE + YE_NOKTALI + HEMZE_YALNIZ + \
+       HEMZE_ELIF_USTUNDE + HEMZE_ELIF_ALTINDA + \
+       HEMZE_VAV_USTUNDE + HEMZE_YE_USTUNDE + SEDDE
 
 
 # todo aasar karakterinin tanimi yapilmali. klavyedeki yeri neresi

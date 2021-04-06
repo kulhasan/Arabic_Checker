@@ -2,8 +2,8 @@
 # Bu sayfada aksam-i seba konusu formule edilmistir
 
 
-import tanimlar as ta
-import fiil_deposu_1 as fd1
+import aaa1_tanimlar as ta
+import aaa2_fiil_deposu_1 as fd1
 
 
 salim_fiil_havuzu = []
@@ -24,18 +24,20 @@ lefif_i_mefruk_fiil_havuzu = []
 
 # Aksam-ı Seb'a'ya göre listelemek için aşağıdaki formüller hazırlanmıştır.
 
-for fiil in fd1.sulasi_fiil_havuzu_list:
+for fiil in fd1.fiil_havuzu_list:
     if (fiil[0] not in ta.GAYR_SALIM) and \
             (fiil[1] not in ta.GAYR_SALIM) and \
             (fiil[2] not in ta.GAYR_SALIM):
         salim_fiil_havuzu.append(fiil)
 
-    elif (fiil[0] not in ta.ILLET_HARFI) and \
+for fiil in fd1.fiil_havuzu_list:
+    if (fiil[0] not in ta.ILLET_HARFI) and \
             (fiil[1] not in ta.ILLET_HARFI) and \
             (fiil[2] == ta.SEDDE):
         sahih_muzaaf_fiil_havuzu.append(fiil)
 
-    elif fiil[0] not in ta.ILLET_HARFI and \
+for fiil in fd1.fiil_havuzu_list:
+    if fiil[0] not in ta.ILLET_HARFI and \
             fiil[1] not in ta.ILLET_HARFI and \
             fiil[2] not in ta.ILLET_HARFI and \
             (fiil[1] not in ta.HEMZE or
@@ -43,27 +45,32 @@ for fiil in fd1.sulasi_fiil_havuzu_list:
              fiil[0] in ta.HEMZE):
         sahih_mehmuz_fiil_havuzu.append(fiil)
 
-    elif fiil[0] in ta.ILLET_HARFI and \
+for fiil in fd1.fiil_havuzu_list:
+    if fiil[0] in ta.ILLET_HARFI and \
             fiil[1] not in ta.ILLET_HARFI and \
             fiil[2] not in ta.ILLET_HARFI:
         misal_fiil_havuzu.append(fiil)
 
-    elif fiil[0] not in ta.ILLET_HARFI and \
+for fiil in fd1.fiil_havuzu_list:
+    if fiil[0] not in ta.ILLET_HARFI and \
             fiil[1] in ta.ILLET_HARFI and \
             fiil[2] not in ta.ILLET_HARFI:
         ecvef_fiil_havuzu.append(fiil)
 
-    elif fiil[0] not in ta.ILLET_HARFI and \
+for fiil in fd1.fiil_havuzu_list:
+    if fiil[0] not in ta.ILLET_HARFI and \
             fiil[1] not in ta.ILLET_HARFI and \
             fiil[2] in ta.ILLET_HARFI:
         nakis_fiil_havuzu.append(fiil)
 
-    elif fiil[0] not in ta.ILLET_HARFI and \
+for fiil in fd1.fiil_havuzu_list:
+    if fiil[0] not in ta.ILLET_HARFI and \
             fiil[1] in ta.ILLET_HARFI and \
             fiil[2] in ta.ILLET_HARFI:
         lefif_i_makrun_fiil_havuzu.append(fiil)
 
-    elif fiil[0] in ta.ILLET_HARFI and \
+for fiil in fd1.fiil_havuzu_list:
+    if fiil[0] in ta.ILLET_HARFI and \
             fiil[1] not in ta.ILLET_HARFI and \
             fiil[2] in ta.ILLET_HARFI:
         lefif_i_mefruk_fiil_havuzu.append(fiil)

@@ -1,10 +1,18 @@
-# Salim mazi malum fiillerin 6 babinin kiplere gore cekimini yapan program
+
+# Salim fiillerin 6 babinin kiplere gore mazi malum cekimini yapan program
 
 
-import fiil_deposu_1 as fd1
+import aaa2_fiil_deposu_1 as fd1
 import Aksam_i_Seba as aseba
 from salim_fiil_ifal_babi import salim_fiil_ifal_babi as sfifalb
 from Salim_Fiil_Bab_1_Mazi_Malum_Fiil_Ceker import Fiiller as sfb1mmfc
+from Salim_Fiil_Bab_2_Mazi_Malum_Fiil_Ceker import Fiiller as sfb2mmfc
+from Salim_Fiil_Bab_3_Mazi_Malum_Fiil_Ceker import Fiiller as sfb3mmfc
+from Salim_Fiil_Bab_4_Mazi_Malum_Fiil_Ceker import Fiiller as sfb4mmfc
+from Salim_Fiil_Bab_5_Mazi_Malum_Fiil_Ceker import Fiiller as sfb5mmfc
+from Salim_Fiil_Bab_6_Mazi_Malum_Fiil_Ceker import Fiiller as sfb6mmfc
+
+
 
 class Fiiller:
     """
@@ -37,7 +45,7 @@ class Fiiller:
 
     def sulasi_bab_bul(self, fiil):
         print("Bab kontrol", fiil)
-        bab = fd1.sulasi_fiil_bab_havuzu_dict.get(fiil)
+        bab = fd1.fiil_havuzu_dict.get(fiil)
         if not bab:
             command = input("Bu fiilin babi bab havuzumuzda gozukmuyor. Eklemek icin ekle yaziniz.")
             if command == 'ekle':
@@ -62,7 +70,7 @@ if __name__ == '__main__':
     # todo for fiil in fd1.salim_fiil_bab_111111111????????/
     # todo sadece bab 1 den degil bab ikiden de nasil cagiracagiz ayni anda
     # todo or yazinca bab 1 den cagiriyor and yazinca bab 2 den cagiriyor
-    for fiil in fd1.sulasi_fiil_havuzu_list:
+    for fiil in fd1.fiil_havuzu_list:
         fiil_bir = Fiiller(fiil)
         fiil_bir.yazdir()
 

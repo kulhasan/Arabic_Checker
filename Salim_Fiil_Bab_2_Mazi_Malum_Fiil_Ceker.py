@@ -1,12 +1,9 @@
 
-'''
 
+# Salim fiillerin 2. babinin kiplere gore mazi malum cekimini yapan program
 
-
-# Salim mazi malum fiillerin 2. babinin kiplere gore cekimini yapan program
-
-import tanimlar as ta
-import Bablarina_ve_Aksam_i_seba_ya_gore_fiiller as b6a7
+import aaa1_tanimlar as ta
+import aaa3_Bablarina_ve_Aksam_i_seba_ya_gore_fiiller as b6a7
 
 
 class Fiiller:
@@ -162,7 +159,3 @@ if __name__ == '__main__':
         fiil_bir.yazdir()
         fiiller_havuzu.append(fiil_bir)
 
-
-'''
-
-b6

@@ -1,9 +1,9 @@
 
 
-import tanimlar as ta
+import aaa1_tanimlar as ta
 
 
-sulasi_fiil_bab_havuzu_dict = {
+fiil_havuzu_dict = {
 
     # Salim fiiller
     'نصر': 1,
@@ -102,14 +102,18 @@ sulasi_fiil_bab_havuzu_dict = {
     'طوى': 2,
     'حيي': 4,
 
+    # Rubai Mücerred fiiller
+
+    'زلزل': 44,
+
 }
 
 
-sulasi_fiil_havuzu_list = list(sulasi_fiil_bab_havuzu_dict)
+fiil_havuzu_list = list(fiil_havuzu_dict)
 
 
 if __name__ == '__main__':
-    print(sulasi_fiil_havuzu_list)
+    print(fiil_havuzu_list)
 
 
 

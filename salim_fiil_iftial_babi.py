@@ -1,6 +1,6 @@
 
 
-import tanimlar as ta
+import aaa1_tanimlar as ta
 import Aksam_i_Seba as aseba
 
 
